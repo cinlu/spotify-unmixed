@@ -27,10 +27,12 @@ Spotify API
 - client
     - npm install
     - npm start
+    - add {"proxy": "http://localhost:8080"} to client side package.json under version 
 - server
     - npm init -y
     - npm install express spotify-web-api-node
     - npm install nodemon --save-dev
+    - npm run dev 
 
 
 - Express

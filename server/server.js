@@ -24,3 +24,5 @@ app.post('/login', (req, res) => {
         res.sendStatus(400); 
     })
 })
+
+app.listen(8080, () => {console.log("Server started on port 8080")})
