@@ -21,3 +21,19 @@ Spotify API
         - Recommendation based on song input
 
     - Exceptions and Errors
+
+
+# Installation and Set Up 
+- client
+    - npm install
+    - npm start
+- server
+    - npm init -y
+    - npm install express spotify-web-api-node
+    - npm install nodemon --save-dev
+
+
+- Express
+- Node JS
+- React JS 
+- React Bootstrap 
