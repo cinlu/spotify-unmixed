@@ -1,0 +1,40 @@
+.Login {
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.login-container {
+    border-color: #36ce87;
+    border-style: solid;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 30px; 
+    border-radius: 10px;
+    width: auto; 
+    height: fit-content;
+}
+
+.app-name {
+    /* color: #36ce87; */
+    color: #a1d7ec; 
+    font-weight: bold; 
+}
+  
+
+.login-img {
+    width: 340px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
