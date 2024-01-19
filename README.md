@@ -25,17 +25,16 @@ Spotify API
 
 # Installation and Set Up 
 - client
+    - npm install axios
+    - npm install react-router-dom@6
     - npm install
     - npm start
-    - add {"proxy": "http://localhost:8080"} to client side package.json under version 
-- server
-    - npm init -y
-    - npm install express spotify-web-api-node
-    - npm install nodemon --save-dev
-    - npm run dev 
 
 
-- Express
-- Node JS
+
 - React JS 
 - React Bootstrap 
+- React Router
+- OAuth 2.0 
+- Spotify Web API 
+
