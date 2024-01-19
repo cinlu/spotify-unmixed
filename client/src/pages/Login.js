@@ -4,7 +4,7 @@ import './Login.css';
 import Footer from "../components/Footer.js"
 
 
-const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=ad7e228bcd104c29a7a8fe38e4603f09&response_type=code&redirect_uri=http://localhost:3000&scope=user-top-read"
+// const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=ad7e228bcd104c29a7a8fe38e4603f09&response_type=code&redirect_uri=http://localhost:3000&scope=user-top-read"
 const CLIENT_ID = "ad7e228bcd104c29a7a8fe38e4603f09"; 
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"; 
 const REDIRECT_URI = "http://localhost:3000/dashboard"; 
@@ -14,20 +14,20 @@ const SCOPES_PARAM = SCOPES.join(SPACE_DELIMITER);
 
 function Login() {
   
-  const [token, setToken] = useState(""); 
+  // const [token, setToken] = useState(""); 
 
-  useEffect(() => {
-    const hash = window.location.hash;
-    let token = window.localStorage.getItem("spotify_token"); 
+  // useEffect(() => {
+  //   const hash = window.location.hash;
+  //   let token = window.localStorage.getItem("spotify_token"); 
     
-    if (!token && hash) {
-      token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]; 
-      window.location.hash = ""; 
-      window.localStorage.setItem("spotify_token", token);
-      setToken(token); 
-    }
+  //   if (!token && hash) {
+  //     token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]; 
+  //     window.location.hash = ""; 
+  //     window.localStorage.setItem("spotify_token", token);
+  //     setToken(token); 
+  //   }
 
-  }, [])
+  // }, [])
 
   const handleLogin = () => {
     window.location = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPES_PARAM}&response_type=token&show_dialog=true`;

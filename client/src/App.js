@@ -10,13 +10,12 @@ import { useState } from 'react';
 const code = new URLSearchParams(window.location.search).get('code'); 
 
 function App() {
-  const [token, setToken] = useState(""); 
 
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Login/>}/>
-        <Route path='/dashboard' element={<Dashboard token={token} setToken={setToken}/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
         {/* <PrivateRoute> 
             <Dashboard/>
         </PrivateRoute>   */}
