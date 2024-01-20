@@ -1,0 +1,24 @@
+.header-container {
+    /* background-color: black; */
+    border-radius: 2px;
+    padding: 7px;
+}
+
+.greeting {
+    margin: 20px; 
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.app-description {
+    margin: 20px; 
+    font-size: small;
+    color: rgba(255, 255, 255, 0.669)
+}
+
+.app-name {
+    /* color: #36ce87; */
+    color: #a1d7ec; 
+    font-weight: bold; 
+}

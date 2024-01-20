@@ -41,7 +41,7 @@ function Login() {
   return (
     <div className="Login" >
       <Container className="login-container"> 
-        <h1> Welcome to <span className="app-name"> SPOTIFY UNMIXED</span></h1>
+        <h1> <span className="app-name"> SPOTIFY UNMIXED</span></h1>
         <img className="login-img" src={require('../images/music-player-cover.png')} alt="spotify music player cover" />
         <button className="btn btn-success btn-lg" onClick={handleLogin}> Login with Spotify </button>
         {/* <a className="btn btn-success btn-lg" href={AUTH_URL}> Login with Spotify </a> */}

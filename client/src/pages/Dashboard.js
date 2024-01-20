@@ -1,6 +1,12 @@
 import './Dashboard.css';
 import axios from "axios"; 
 import { useState, useEffect } from 'react';
+import Footer from '../components/Footer';
+import { Container } from 'react-bootstrap';
+import DashboardHeader from '../components/DashboardHeader';
+import Recommendations from '../components/Recommendations';
+import TopTracks from '../components/TopTracks';
+import TopArtists from '../components/TopArtists';
 
 function Dashboard() {
   const TOP_TRACKS_URL = "https://api.spotify.com/v1/me/top/tracks?limit=5"; 
@@ -35,7 +41,6 @@ function Dashboard() {
       // window.localStorage.setItem("expires_in", time);
 
       setToken(t); 
-      console.log(t); 
 
       axios.get(TOP_TRACKS_URL, {
         headers: {
@@ -48,19 +53,46 @@ function Dashboard() {
       })
       .catch((error) => {
         console.log(error); 
-        console.log(t);
       })
+      
     }   
   }, [])
 
+  // useEffect(() => {
+  //   handleGetTopTracks(); 
+  // }, [token])
+
+  // const handleGetTopTracks = () => {
+  //   console.log(token); 
+
+  //   axios.get(TOP_TRACKS_URL, {
+  //     headers: {
+  //       Authorization: "Bearer " + token, 
+  //     }, 
+  //   })
+  //   .then((response) => {
+  //     console.log(response.data);
+  //     setTopTracks(response.data); 
+  //   })
+  //   .catch((error) => {
+  //     console.log(error); 
+  //   })
+  // }
+
   return (
-    <div> 
-      <p> dashboard!! </p>
-      <p> {token} </p>
+    
+    <div className='Dashboard'> 
+      
+      <DashboardHeader token={token}/>
+      <Recommendations/>
+      <TopTracks/>
+      <TopArtists/>
+    
       {
         topTracks.items ? topTracks.items.map((item) => {
-          <p> {item.name} </p> }) : null
+          return <p> {item.name} </p> }) : null
       }
+      <Footer/>
     </div>
   );
 }

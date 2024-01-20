@@ -1,0 +1,12 @@
+.Dashboard {
+    color: white; 
+    background-color: #121212;
+    background-image: linear-gradient(#198754b4, #0f5b38b4, #0d462ba7, #0b3b258b, #082d1c80, #07261755, #04160d09, #12121200);
+    background-position: 50%;
+    background-size: 50%;
+    width: 100%; 
+    height: 100vh;
+    padding: 30px; 
+}
+
+

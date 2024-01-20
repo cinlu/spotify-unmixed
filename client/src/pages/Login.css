@@ -8,19 +8,23 @@
   }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .login-container {
     border-color: #36ce87;
+    /* border-color: #121212; */
     border-style: solid;
     text-align: center;
     font-size: calc(10px + 2vmin);
     color: white;
     padding: 30px; 
+    padding-left: 110px; 
+    padding-right: 110px; 
     border-radius: 10px;
     width: auto; 
     height: fit-content;
+    margin-top: 20px;
 }
 
 .app-name {
