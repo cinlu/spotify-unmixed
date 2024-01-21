@@ -19,7 +19,6 @@ function TopArtists({token}) {
       }, 
     })
     .then((response) => {
-      // console.log(response.data);
       setTopArtists(response.data); 
     })
     .catch((error) => {
@@ -30,10 +29,11 @@ function TopArtists({token}) {
   return (
     <Container>
         <h5> Your Most Listened to Artists </h5>
+        <p className='subheading'>These are your favorite artists of all time</p>
         <Row className='row'>
           {
           topArtists.items ? topArtists.items.map((item) => {
-            return <SingleItem key={item.id} image={item.images} name={item.name} /> }) : null
+            return <SingleItem key={item.id} image={item.images[1].url} name={item.name} url={item.uri} /> }) : null
           }
         </Row>
     </Container>

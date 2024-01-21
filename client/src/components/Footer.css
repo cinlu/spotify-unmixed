@@ -2,11 +2,11 @@ footer {
     font-size: small;
     color: #198754b1;
     text-align: center;
-    position: fixed; 
+    /* position: fixed;  */
     width: 100%;
     bottom: 0; 
 }
  
-a {
+.link {
     color: #198754b1; 
 } 

@@ -7,6 +7,7 @@ import './TopTracks.css';
 function TopTracks( {token} ) {
   const TOP_TRACKS_URL = "https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=5"; 
   const [topTracks, setTopTracks] = useState({}); 
+  const image = "https://i.scdn.co/image/ab67616d00001e028887db2fad43dcb74dabc5e5"; 
 
 
   useEffect(() => {
@@ -31,10 +32,14 @@ function TopTracks( {token} ) {
   return (
     <Container >
         <h5> Your Most Listened to Tracks </h5>
+        <p className='subheading'>These are your favorite tracks of all time</p>
         <Row className='row'>
           {
           topTracks.items ? topTracks.items.map((item) => {
-            return <SingleItem key={item.id} image={item.images} name={item.name} details={item.artists[0].name}/> }) : null
+            return ( 
+              <SingleItem key={item.id} image={image} name={item.name} details={item.artists[0].name} url={item.uri}/>) 
+            }) 
+            : null
           }
         </Row>
     </Container>

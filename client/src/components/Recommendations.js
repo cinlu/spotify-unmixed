@@ -62,7 +62,7 @@ function Recommendations({token}) {
         <Row className='row'>
           {
           recommendations.tracks ? recommendations.tracks.map((item) => {
-            return <SingleItem key={item.id} image={item.images} name={item.name} details={item.artists[0].name}/> }) : null
+            return <SingleItem key={item.id} image={item.images} name={item.name} details={item.artists[0].name} url={item.uri}/> }) : null
           }
         </Row>
     </Container>
