@@ -47,7 +47,7 @@ function Recommendations({token}) {
       }, 
     })
     .then((response) => {
-      // console.log(response.data);
+      console.log(response.data);
       setRecommendations(response.data); 
     })
     .catch((error) => {
@@ -62,7 +62,7 @@ function Recommendations({token}) {
         <Row className='row'>
           {
           recommendations.tracks ? recommendations.tracks.map((item) => {
-            return <SingleItem key={item.id} image={item.images} name={item.name} details={item.artists[0].name} url={item.uri}/> }) : null
+            return <SingleItem key={item.id} image={item.album.images[1].url} name={item.name} details={item.artists[0].name} url={item.uri}/> }) : null
           }
         </Row>
     </Container>

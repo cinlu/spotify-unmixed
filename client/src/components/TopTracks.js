@@ -37,7 +37,7 @@ function TopTracks( {token} ) {
           {
           topTracks.items ? topTracks.items.map((item) => {
             return ( 
-              <SingleItem key={item.id} image={image} name={item.name} details={item.artists[0].name} url={item.uri}/>) 
+              <SingleItem key={item.id} image={item.album.images[1].url} name={item.name} details={item.artists[0].name} url={item.uri}/>) 
             }) 
             : null
           }
