@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a8916999-785c-4f82-b202-b2150f8bb542/deploy-status)](https://app.netlify.com/sites/unmixed-spotify/deploys)# 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8916999-785c-4f82-b202-b2150f8bb542/deploy-status)](https://app.netlify.com/sites/unmixed-spotify/deploys) 
 
 # Description
 
