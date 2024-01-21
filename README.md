@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a5ab7b3-a7dc-4455-971a-219dd71e866e/deploy-status)](https://app.netlify.com/sites/unmixed-spotify/deploys)
 # Development Information 
 Spotify API
 - Stats From Spotify
