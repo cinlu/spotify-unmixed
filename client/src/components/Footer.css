@@ -1,6 +1,6 @@
 footer {
     font-size: small;
-    color: #198754b1;
+    color: #a1d7ec; 
     text-align: center;
     /* position: fixed;  */
     width: 100%;
@@ -8,5 +8,5 @@ footer {
 }
  
 .link {
-    color: #198754b1; 
+    color: #a1d7ec; 
 } 

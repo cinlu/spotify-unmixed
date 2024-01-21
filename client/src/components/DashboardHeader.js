@@ -42,7 +42,7 @@ function DashboardHeader( {token} ) {
       <p className='app-description'> 
       Welcome to <span className='app-name'> Spotify Unmixed</span>, a cool app where you can get insights 
       on your top listens and recommendations based on your recent favorites. I got some other fun projects 
-      in the works so make sure you check out my online <a className="link" href='https://google.com'> portfolio</a>.
+      in the works so make sure you check out my online <a className="header-link" href='https://google.com'> portfolio</a>.
       </p>
     </Container>
     
