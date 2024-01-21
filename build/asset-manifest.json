@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ca15ef1d.css",
+    "main.js": "/static/js/main.3bed936d.js",
+    "static/media/music-player-cover.png": "/static/media/music-player-cover.57092aade9d9956d6596.png",
+    "index.html": "/index.html",
+    "main.ca15ef1d.css.map": "/static/css/main.ca15ef1d.css.map",
+    "main.3bed936d.js.map": "/static/js/main.3bed936d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca15ef1d.css",
+    "static/js/main.3bed936d.js"
+  ]
+}
