@@ -1,5 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a5ab7b3-a7dc-4455-971a-219dd71e866e/deploy-status)](https://app.netlify.com/sites/unmixed-spotify/deploys)
-# Development Information 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8916999-785c-4f82-b202-b2150f8bb542/deploy-status)](https://app.netlify.com/sites/unmixed-spotify/deploys)# Development Information 
 Spotify API
 - Stats From Spotify
 - Client ID: ad7e228bcd104c29a7a8fe38e4603f09
