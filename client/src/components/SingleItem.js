@@ -1,11 +1,11 @@
 import { Container } from 'react-bootstrap';
 import './SingleItem.css';
 
-function SingleItem( {image, trackName, details} ) {
+function SingleItem( {image, name, details} ) {
   return (
     <Container className='single-item'>
         <img src={image} alt="cover art"/>
-        <p> {trackName} </p>
+        <p> {name} </p>
         <p> {details} </p>
     </Container>
   );

@@ -24,3 +24,8 @@
     font-size: small;
     color: rgba(255, 255, 255, 0.669)
 }
+
+.row {
+    /* background-color: black; */
+    display: flex;
+}

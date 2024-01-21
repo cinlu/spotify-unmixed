@@ -7,17 +7,8 @@ import TopTracks from '../components/TopTracks';
 import TopArtists from '../components/TopArtists';
 
 function Dashboard() {
-  const TOP_ARTISTS_URL = "https://api.spotify.com/v1/me/top/artists?limit=5"; 
-  const TOP_TRACK_URL = "https://api.spotify.com/v1/me/top/tracks?limit=1"; 
-  const TOP_ARTIST_URL = "https://api.spotify.com/v1/me/top/artists?limit=1"; 
-
-
   const [token, setToken] = useState(""); 
-  // const [topTracks, setTopTracks] = useState({}); 
-  const [topArtists, setTopArtists] = useState({}); 
-  const [topTrack, setTopTrack] = useState({}); 
-  const [topArtist, setTopArtist] = useState({}); 
-
+  
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -44,9 +35,9 @@ function Dashboard() {
   return (
     <div className='Dashboard'> 
       <DashboardHeader className="container" token={token}/>
-      <Recommendations className="container" />
+      <Recommendations className="container" token={token} />
       <TopTracks className="container" token={token}/>
-      <TopArtists className="container" />
+      <TopArtists className="container" token={token}/>
       <Footer/>
     </div>
   );

@@ -1,6 +1,5 @@
-import './Footer.css';
 import axios from "axios"; 
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import SingleItem from '../components/SingleItem';
 import { useState, useEffect } from 'react';
 import './TopTracks.css';
@@ -21,7 +20,7 @@ function TopTracks( {token} ) {
       }, 
     })
     .then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       setTopTracks(response.data); 
     })
     .catch((error) => {
@@ -35,7 +34,7 @@ function TopTracks( {token} ) {
         <Row className='row'>
           {
           topTracks.items ? topTracks.items.map((item) => {
-            return <SingleItem key={item.id} image={item.images} trackName={item.name} details={item.artists[0].name}/> }) : null
+            return <SingleItem key={item.id} image={item.images} name={item.name} details={item.artists[0].name}/> }) : null
           }
         </Row>
     </Container>
