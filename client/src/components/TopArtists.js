@@ -1,11 +1,13 @@
 import './Footer.css';
+import { Container } from 'react-bootstrap';
+
 
 function TopArtists() {
   return (
-    <>
-        <p>Top Artists</p>
+    <Container>
+        <h5> Your Most Listened to Artists </h5>
         
-    </>
+    </Container>
   );
 }
 

@@ -8,7 +8,7 @@
   }
 
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .login-container {
@@ -19,12 +19,12 @@ h1 {
     font-size: calc(10px + 2vmin);
     color: white;
     padding: 30px; 
-    padding-left: 110px; 
-    padding-right: 110px; 
+    /* padding-left: 110px; 
+    padding-right: 110px;  */
     border-radius: 10px;
     width: auto; 
-    height: fit-content;
-    margin-top: 20px;
+    height: fit-contents;
+    /* margin-top: 20px; */
 }
 
 .app-name {

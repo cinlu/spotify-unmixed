@@ -1,12 +1,12 @@
 import { Container } from 'react-bootstrap';
-import './Footer.css';
+import './SingleItem.css';
 
-function SingleItem( {image} ) {
+function SingleItem( {image, trackName, details} ) {
   return (
     <Container className='single-item'>
-        <img src={image}/>
-        
-        
+        <img src={image} alt="cover art"/>
+        <p> {trackName} </p>
+        <p> {details} </p>
     </Container>
   );
 }
